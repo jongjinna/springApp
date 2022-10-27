@@ -1,10 +1,10 @@
-package com.example.website;
+package DOP.tory;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class WebsiteApplicationTests {
+class ToryApplicationTests {
 
 	@Test
 	void contextLoads() {
