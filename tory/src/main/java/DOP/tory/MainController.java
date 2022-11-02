@@ -12,4 +12,8 @@ public class MainController {
     public String index() {
         return "Hello, This is Dop site, i make this site to study spring";
     }
+    @RequestMapping("/")
+    public String root() {
+        return "redirect:/question/list";
+    }
 }
