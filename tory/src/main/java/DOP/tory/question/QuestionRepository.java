@@ -1,4 +1,4 @@
-package DOP.tory;
+package DOP.tory.question;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

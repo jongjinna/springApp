@@ -2,6 +2,8 @@ package DOP.tory;
 
 import java.time.LocalDateTime;
 
+import DOP.tory.question.Question;
+import DOP.tory.question.QuestionRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
