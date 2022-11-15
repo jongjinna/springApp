@@ -1,19 +1,21 @@
 package DOP.tory;
 
+import DOP.tory.question.Question;
+import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class MainController {
 
     @RequestMapping("/DOPTORY")
-    @ResponseBody
     public String index() {
-        return "Hello, This is Dop site, i make this site to study spring";
+        return "doptory";
     }
     @RequestMapping("/")
     public String root() {
-        return "redirect:/question/list";
+        return "redirect:/DOPTORY";
     }
 }

@@ -10,6 +10,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Id;
 
 import DOP.tory.question.Question;
+import DOP.tory.user.SiteUser;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -28,4 +29,7 @@ public class Answer {
 
     @ManyToOne
     private Question question;
+
+    @ManyToOne
+    private SiteUser author;
 }
