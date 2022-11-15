@@ -1,6 +1,8 @@
 package DOP.tory.answer;
 
 import java.time.LocalDateTime;
+import java.util.Set;
+import javax.persistence.ManyToMany;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -32,4 +34,9 @@ public class Answer {
 
     @ManyToOne
     private SiteUser author;
+
+    private LocalDateTime modifyDate;
+
+    @ManyToMany
+    Set<SiteUser> voter;
 }

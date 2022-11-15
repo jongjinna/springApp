@@ -2,6 +2,8 @@ package DOP.tory.question;
 
 import java.time.LocalDateTime;
 import java.util.List;
+import java.util.Set;
+import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import DOP.tory.user.SiteUser;
 import javax.persistence.CascadeType;
@@ -37,4 +39,10 @@ public class Question {
 
     @ManyToOne
     private SiteUser author;
+
+    private LocalDateTime modifyDate;
+
+    @ManyToMany
+    Set<SiteUser> voter;
+
 }
