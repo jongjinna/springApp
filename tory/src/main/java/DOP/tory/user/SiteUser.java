@@ -23,6 +23,8 @@ public class SiteUser {
 
     private String password;
 
+    private String company;
+
     @Column(unique = true)
     private String email;
 }

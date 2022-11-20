@@ -17,12 +17,12 @@ public class UserService {
     private final UserRepository userRepository;
     private final PasswordEncoder passwordEncoder;
 
-    public SiteUser create(String username, String email, String password) {
+    public SiteUser create(String username, String email, String password, String company) {
         SiteUser user = new SiteUser();
         user.setUsername(username);
         user.setEmail(email);
+        user.setCompany(company);
         BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
-        user.setPassword(passwordEncoder.encode(password));
         user.setPassword(passwordEncoder.encode(password));
         this.userRepository.save(user);
         return user;
